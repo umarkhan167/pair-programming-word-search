@@ -35,4 +35,10 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+
+  it("should return undefined if the word matrix is empty", function() {
+    const result = wordSearch([ ], 'HELLO')
+    assert.isUndefined(result);
+  });
 });
